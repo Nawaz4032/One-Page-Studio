@@ -1,0 +1,50 @@
+$white-color:#fff;
+$fontMedium: 500;
+$fontSemiBold:600;
+$orange-color:#ff841b;
+$big-Font: 42px;
+$Medium-Font: 36px;
+$regular-Font:16px;
+$small-Font:12px;
+$dark-blue-color:#001a53;
+$gray-color:#676767;
+
+/**Mixin and inlcude**/
+
+@mixin centerdisplay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+@mixin box-shadow($value1, $value2, $value3, $value4) {
+    -webkit-box-shadow: $value1 $value2 $value3 $value4;
+    box-shadow: $value1 $value2 $value3 $value4;
+}
+
+
+/**Media Mixing**/
+
+@mixin minmaxscreens($minscreen, $maxscreen) {
+    @media (min-width: $minscreen + 'px') and (max-width: $maxscreen + "px") {
+        @content;
+    }
+}
+
+@mixin maxscreens($maxscreens) {
+    @media (max-width: $maxscreens + "px") {
+        @content;
+    }
+}
+
+@mixin minscreens($minscreens) {
+    @media (min-width: $minscreens + "px") {
+        @content;
+    }
+}

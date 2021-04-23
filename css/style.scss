@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import"variable";
+@import"owl.carousel.min";
+@import"owl.theme.default";
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+/**Common Css Start**/
+
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none
+}
+
+a:focus {
+    outline: 0
+}
+
+*:focus {
+    outline: none !important
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #000
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.text-uppercase {
+    text-transform: uppercase
+}
+
+.position-relative {
+    position: relative;
+}
+
+.btn-orange {
+    background: $orange-color;
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: $fontSemiBold;
+    font-size: 14px;
+    padding: 8px 25px;
+}
+
+.w-47 {
+    width: 47%;
+}
+
+.mt-7 {
+    margin-top: 70px;
+}
+
+.mb-7 {
+    margin-bottom: 70px;
+}
+
+.pt-7 {
+    padding-top: 70px;
+}
+
+.pb-7 {
+    padding-bottom: 70px;
+}
+
+
+/**CSS Start**/
+
+.mynavbar {
+    position: absolute;
+    top: 10px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .navbar-nav .nav-link {
+        color: $white-color;
+        font-size: $regular-Font - 2px;
+        margin: 0 15px;
+        padding: 0;
+        &:hover {
+            color: $orange-color
+        }
+    }
+}
+
+
+/**Banner**/
+
+.banner-wrp {
+    .content-overlay {
+        position: absolute;
+        top: 50%;
+        max-width: 690px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        transform: translate(0, -50%);
+        span {
+            color: $orange-color;
+            font-size: $small-Font;
+            font-weight: $fontSemiBold;
+            letter-spacing: 5px;
+            display: inline-block;
+        }
+        h1 {
+            color: $white-color;
+            font-size: $big-Font;
+            font-weight: $fontSemiBold;
+            line-height: 1.4;
+        }
+        p {
+            font-size: $small-Font + 2px;
+            color: $white-color;
+        }
+    }
+}
+
+
+/**Services**/
+
+.service-card-wrp {
+    position: absolute;
+    background: #f2f2f2;
+    max-width: 760px;
+    width: 100%;
+    padding: 35px;
+    @at-root {
+        .heading-group {
+            h5 {
+                color: $gray-color;
+                font-size: $regular-Font;
+            }
+            h4 {
+                color: $dark-blue-color;
+                font-size: $Medium-Font;
+            }
+            p {
+                color: $gray-color;
+                font-size: $regular-Font;
+                margin-top: 20px;
+            }
+        }
+    }
+    .service-card {
+        .icon {
+            margin-right: 15px;
+            img {
+                width: 90%;
+            }
+        }
+        .info {
+            width: calc(100% - 60px);
+            h4 {
+                color: $dark-blue-color;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            p {
+                color: $gray-color;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+/****/
+
+.collection-card {
+    .info {
+        padding-top: 25px;
+        h4 {
+            color: $dark-blue-color;
+            font-size: $regular-Font + 6px;
+            font-weight: $fontSemiBold;
+            margin-bottom: 5px;
+        }
+        span {
+            font-size: $regular-Font;
+            color: #9b9b9b;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: $regular-Font - 1px;
+            color: $gray-color;
+            padding: 0 5px;
+        }
+    }
+}
+
+
+/**Owl Custom Code**/
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 3px;
+    margin: 5px 5px;
+    background: #b2b2b2;
+    border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $orange-color;
+}
+
+
+/****/
+
+.our-goal-wrp {
+    background: url("../images/bg-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+
+.our-goal-card {
+    margin-top: -100px;
+    .card-details {
+        padding: 40px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        &.vision-card {
+            background: #f5f5f5;
+            position: relative;
+            &::after {
+                top: 0;
+                position: absolute;
+                right: 0;
+                width: 194px;
+                height: 100%;
+                background: url("../images/icons/circle.png") no-repeat;
+                content: "";
+                background-size: cover;
+            }
+        }
+        &.mission-card {
+            background: #fbfbfb
+        }
+        img {
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: $regular-Font + 6px;
+            color: $dark-blue-color;
+            font-weight: $fontSemiBold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: $regular-Font;
+            color: $gray-color;
+            padding: 0 5px;
+            max-width: 380px;
+            margin: auto;
+            line-height: 1.7;
+        }
+    }
+}
+
+
+/****/
+
+footer {
+    background: url("../images/footer-bg.jpg");
+    padding: 50px 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+}
+
+.footer-menu li a {
+    color: #c6c6c6;
+    font-size: $small-Font + 2px;
+    display: inline-block;
+    margin: 25px 10px
+}
+
+.footer-card p {
+    color: #c6c6c6;
+    font-size: $small-Font + 2px;
+}
+
+.footer-card p a {
+    color: $orange-color
+}
+
+
+/****/
+
+.collection-card {
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(22, 33, 77, 0.9);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        ul {
+            @include centerdisplay;
+            height: 100%;
+            li a {
+                display: inline-block;
+                margin: 0 10px;
+                color: $orange-color;
+                opacity: 0;
+                transition: 0.2s linear;
+            }
+        }
+    }
+}
+
+.collection-card .images:hover .overlay {
+    height: 50px;
+}
+
+.collection-card .images:hover .overlay li a {
+    opacity: 1;
+}
+
+
+/**Media Start**/
+
+@include minmaxscreens(992,
+1200) {
+    .banner-wrp .content-overlay h1 {
+        font-size: 32px;
+    }
+    .mt-5 {
+        margin-top: 20px !important;
+    }
+    /****/
+}
+
+@include minmaxscreens(768,
+991) {
+    .navbar-nav {
+        padding-top: 5px;
+    }
+    .mynavbar .navbar-nav .nav-link {
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    .service-card-wrp {
+        width: 95%;
+    }
+    .our-work-wrp.mt-7 {
+        margin-top: 90px;
+    }
+    .footer-menu li a {
+        font-size: 12px;
+        margin: 25px 8px;
+    }
+    /****/
+}
+
+@include maxscreens(767) {
+    .navbar-brand {
+        width: 160px;
+    }
+    .our-service-wrp.d-flex,
+    .service-details.d-flex {
+        flex-direction: column;
+        justify-content: flex-start !important;
+    }
+    .service-card.d-flex {
+        width: 100%;
+    }
+    .banner-wrp .content-overlay h1 {
+        font-size: 15px;
+    }
+    .banner-wrp .content-overlay p {
+        font-size: 14px;
+        white-space: nowrap;
+        width: 240px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: auto;
+        margin-top: 10px !important;
+    }
+    .banner-wrp .content-overlay p br {
+        display: none;
+    }
+    .content-overlay .btn.btn-orange.mt-5 {
+        margin-top: 15px !important;
+    }
+    .content-overlay .btn-orange {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .navbar-toggler {
+        border: 1px solid #fff;
+    }
+    .mynavbar {
+        position: static;
+        background: #091843;
+        padding: 15px;
+    }
+    .menubar-wrp {
+        background: #091843;
+    }
+    .navbar-toggler-icon {
+        background: url("../images/icons/menu-icon.png");
+        background-size: cover
+    }
+    .mynavbar .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+    .navbar-nav {
+        padding-top: 15px;
+    }
+    .heading-group h4 {
+        font-size: $Medium-Font - 10px;
+    }
+    .left-img,
+    .right-img {
+        display: none;
+    }
+    .service-card-wrp {
+        position: static;
+    }
+    .service-card-wrp {
+        padding: 25px;
+    }
+    .our-goal-card {
+        flex-direction: column;
+    }
+    .card-details.w-50 {
+        width: 100% !important;
+    }
+    .footer-menu li {
+        display: block;
+    }
+    .footer-menu li a {
+        margin: 8px 10px;
+    }
+    .footer-menu {
+        margin: 15px 0;
+    }
+    footer {
+        background-size: cover;
+    }
+    /****/
+}

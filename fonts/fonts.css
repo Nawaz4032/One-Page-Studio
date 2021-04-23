@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Conv_GothamMedium';
+    src: url('Gautam/GothamMedium.eot');
+    src: url('Gautam/GothamMedium.eot');
+    src: url('Gautam/GothamMedium.woff') format('woff'), url('Gautam/GothamMedium.ttf') format('truetype'), url('Gautam/GothamMedium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Gotham-Thin';
+    src: url('Gautam/Gotham-Thin.eot');
+    src: local('☺'), url('Gautam/Gotham-Thin.woff') format('woff'), url('Gautam/Gotham-Thin.ttf') format('truetype'), url('Gautam/Gotham-Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_GothamLight';
+    src: url('Gautam/GothamLight.eot');
+    src: local('☺'), url('Gautam/GothamLight.woff') format('woff'), url('Gautam/GothamLight.ttf') format('truetype'), url('Gautam/GothamLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_GothamBook';
+    src: url('Gautam/GothamBook.eot');
+    src: local('☺'), url('Gautam/GothamBook.woff') format('woff'), url('Gautam/GothamBook.ttf') format('truetype'), url('Gautam/GothamBook.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Gotham-Bold';
+    src: url('Gautam/Gotham-Bold.eot');
+    src: local('☺'), url('Gautam/Gotham-Bold.woff') format('woff'), url('Gautam/Gotham-Bold.ttf') format('truetype'), url('Gautam/Gotham-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_Gotham-Black';
+    src: url('Gautam/Gotham-Black.eot');
+    src: local('☺'), url('Gautam/Gotham-Black.woff') format('woff'), url('Gautam/Gotham-Black.ttf') format('truetype'), url('Gautam/Gotham-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_times-it';
+    src: url('time-italic/times-it.eot');
+    src: local('☺'), url('time-italic/times-it.woff') format('woff'), url('time-italic/times-it.ttf') format('truetype'), url('time-italic/times-it.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

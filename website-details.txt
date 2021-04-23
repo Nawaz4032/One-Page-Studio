@@ -1,0 +1,9 @@
+---------Website Details.------------
+webiste mostly made in sass and flex layout.
+bootstrap 4
+Owl Carousal 2
+Visual Studio Code
+Koala app to compile sass file
+Custom Google Font Poppins
+Jquery v3.5.1
+font-awesome 4
